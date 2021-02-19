@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Science book reviews">
+    <meta name="keywords" content="books, Science, Review">
+    <meta name="author" content="Tachy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellum</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type='text/javascript' src='/js/script.js' defer></script>
+  </head>
+  <body>
+<nav>
+  <ul class='navbar'>
+  	<li><a href='/'><img src='/static/img/vellum.png'/ id='logo'></a></li>
+    <li class='push'><a href="/about">About</a></li>
+    <!--<li><a href="#">Contact</a></li>-->
+  </ul>
+</nav> 
+<main class='main-container'>
+<h1>About Vellum</h1>
+<p>Vellum is inspired by NPR's <a href="https://apps.npr.org/best-books/">Book Concierge</a> and Lithub's <a href="https://bookmarks.reviews/">review aggregator</a>. As it says on the tin, Vellum is an aggregated list of nonfiction books that have been reviewed by academics on the websites mentioned below.</p>
+<h2>Why did you make this?</h2>
+<p>I love books, fiction or nonfiction. When looking for nonfiction on specialist topics written for the lay reader, I try my best to judge whether the book is factually sound before reading it. Some books make a huge splash before <a href="https://guzey.com/books/why-we-sleep/">their flaws are laid bare</a>—it takes an expert to uncover those flaws.</p>
+<p>There are two types of nonfiction reviews written by academics: those about books written by experts for experts, and those about books written by experts for non-experts. I'm mostly interested in the latter kind of reviews, which are published online by some big-name journals and universities. Digging through their gleefully paginated blogs isn't the most pleasant experience, however, which is why I made this attempt at a better interface. I find this list easier to browse and the filters, while not 100% there*, help to narrow down the options. Note that the reviews themselves aren't displayed at all to avoid blatantly violating the journals' terms of service; instead, I've included links to the original reviews.</p>
+<p>Besides, this was a fun excuse to play with</p>
+<p>*<em>The keyword filters are generated from the source HTML and are therefore a little wonky. At some point I hope to clean and aggregate them into broader categories.</em></p>
+<h2>Source of reviews</h2>
+<ul>
+<li><a href="https://www.nature.com/nature/articles?type=book-review"><em>Nature</em></a>*</li>
+<li><a href="https://blogs.sciencemag.org/books/category/book/"><em>Science</em></a></li>
+<li><a href="https://blogs.lse.ac.uk/lsereviewofbooks/"><em>LSE Review of Books</em></a></li>
+</ul>
+<p>*<em>Most recent 100 reviews, as earlier reviews appear to be comprised mainly of very niche texts and edited collections.</em></p>
+<h2>Disclaimer</h2>
+<p>This is a personal, non-commercial project unaffiliated with any of the institutions mentioned on this site. All rights are reserved to the original owners. No source material is displayed on this site.</p>
+<h1>About this website</h1>
+<p>I'm not a developer of any kind, so please forgive any defects in styling/functionality/optimisation. This is a basic static site generated with <a href="11ty.dev/">11ty</a>. Apart from the <a href="https://apoorv.pro/lozad.js/">lozad</a> and <a href="https://isotope.metafizzy.co/">Isotope</a> Javascript libraries, everything else is (poorly written) vanilla HTML, CSS and JS. This project could definitely use a database but I bent over backwards to minimise backend requirements. Don't ask me why.</p>
+<p>I gathered the list of books with the help of my pet snake (ahem), whom I bribed with some <em>beautiful</em> soup and very humble <em>requests</em>. With JSON happily in hand, I queried the Google Books API for metadata, including the book descriptions and covers.</p>
+<p>The website is hosted on <a href="https://www.netlify.com/">Netlify</a> for a grand total of Ð0.</p>
+<h1>About me</h1>
+<p>I'm a medical student and I like messing about with computers. You can find other things I've made <a href="https://tachy.org">here</a>.</p>
+</main>
+
+
+<div id='modal'></div>
+<div id='impossible'>Impossible. Perhaps the archives are incomplete.</div>
+
+<footer><a href='https://tachy.org' target="_blank">tachy.org</a></footer>
+</main>
+</body>
+
+  
+</html>

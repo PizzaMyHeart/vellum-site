@@ -1,0 +1,239 @@
+.filters-select {
+	margin: 1em 0;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.flex-container > * {
+		margin: 1em 1em;
+	}
+}
+
+.book-thumbnail {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 300px;
+	width: 195px;
+	border-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+	.book-thumbnail {
+		height: 400px;
+		width: 260px
+	}
+}
+
+.book-thumbnail:hover{
+	opacity: 0.5
+}
+
+
+.title-placeholder {
+	/*background-color: #454545;*/
+	padding: 0.5em;
+	font-size: 1.5em
+}
+
+
+.description {
+	display: none;
+	left: 0;
+	margin-right: 6em;
+}
+
+
+.book-title {
+	font-size: 2em;
+	font-weight: 'bold',
+	line-height: 2.4em;
+	margin-bottom: 1em
+}
+
+
+#modal {
+	  position: fixed; /* Sit on top of the page content */
+	  display: none; /* Hidden by default */
+	  width: 100%; /* Full width (cover the whole page) */
+	  max-height: 100%; /* Full height (cover the whole page) */
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #000; /* Black background with opacity */
+	  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	  color: #fff;
+	  padding: 2em 2em;
+	  overflow-y: auto;
+	  padding-bottom: 2em
+}
+
+
+
+
+.main-container {
+	padding: 0.2em 0.2em;
+}
+
+@media only screen and (min-width: 768px) {
+	#modal {
+		padding: 2em 5em;
+	}
+
+	.main-container {
+		padding: 2em 2em;
+	}
+}
+
+body {
+	background-color: #041c14;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	width: 100%
+}
+
+
+/* Accordion */
+
+.accordion {
+  cursor: pointer;
+  padding: 13px;
+  text-align: left;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+.active, .accordion:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+
+
+a {
+	color: #34deeb;
+}
+
+a:visited {
+	color: #dedede;
+}
+
+
+.keyword-container {
+	display: flex;
+}
+
+.keyword {
+	/*background-color: #dedede;
+	border-radius: 30px;*/
+	color: #fff;
+	font-size: 0.8em;
+	margin: 0 1em;
+}
+
+
+
+footer {
+	font-size: 0.7em;
+	display: flex;
+	justify-content: center
+}
+
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar {
+		padding-right: 2em
+	}
+
+}
+
+.navbar li {
+	list-style: none;
+	font-size: 1.25em
+}
+
+.navbar a {
+	text-decoration: none
+}
+
+/* Push flex item to right */
+.push {
+	margin-left: auto
+}
+
+p {
+	margin: 0 0 4em 0;
+}
+
+
+.hidden {
+	opacity: 0;
+}
+
+
+#slogan {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-container {
+	font-size: 1.5em;
+	line-height: 2em
+	}
+
+	
+}
+
+
+#impossible {
+	display: none;
+	text-align: center;
+}
+
+/* Sticky footer */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		padding: 0 2em;
+	}
+}
+
+.main-container {
+	flex: 1 0 auto;
+}
+
+#impossible {
+	flex: 1;
+}
+
+footer {
+	flex-shrink: 0;
+	font-size: 0.8em
+}
