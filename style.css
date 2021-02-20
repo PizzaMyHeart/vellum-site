@@ -77,10 +77,11 @@
 
 
 
-
+/*
 .main-container {
 	padding: 0.2em 0.2em;
 }
+*/
 
 @media only screen and (min-width: 768px) {
 	#modal {
@@ -98,7 +99,8 @@ body {
 	color: #fff;
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
-	width: 100%
+	width: 100%;
+	padding: 0.2em 0.2em;
 }
 
 
@@ -177,10 +179,12 @@ footer {
 	text-decoration: none
 }
 
-/* Push flex item to right */
-.push {
-	margin-left: auto
+
+
+#nav-item-right {
+	margin-right: 2em;
 }
+
 
 p {
 	margin: 0 0 4em 0;
@@ -216,7 +220,9 @@ p {
 body {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh
+	min-height: 100vh;
+	max-width: 100%;
+	overflow-x: hidden
 }
 
 @media only screen and (min-width: 768px) {
